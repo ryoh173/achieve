@@ -1,5 +1,5 @@
-n = 302
-while n <= 401
+n = 1
+while n <= 100
   Blog.create(
     title: "Hello",
     content: "World",
