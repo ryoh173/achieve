@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
+  resources :poems, only: [:index, :show]
   devise_for :users
   resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
 
