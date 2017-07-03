@@ -64,6 +64,17 @@ gem 'cancan'
 
 gem 'activeresource'
 
+gem 'omniauth'
+
+gem 'omniauth-twitter'
+
+gem 'omniauth-facebook'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
+
 group :development do
   gem 'letter_opener_web'
+  gem 'dotenv-rails'
 end

@@ -6,7 +6,12 @@ Rails.application.routes.draw do
   end
 
   resources :poems, only: [:index, :show]
-  devise_for :users
+
+  devise_for :users, controllers: {
+    registrations: "users/registrations",
+    omniauth_callbacks: "users/omniauth_callbacks"
+  }
+
   resources :blogs, only: [:index, :new, :create, :edit, :update, :destroy] do
 
  collection do
@@ -19,6 +24,8 @@ Rails.application.routes.draw do
       post :confirm
     end
   end
+
+
 
 
 
