@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.action_mailer.default_url_options = { host: 'young-chamber-91056.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'http://13.230.84.158/' }
   ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings =
 {
